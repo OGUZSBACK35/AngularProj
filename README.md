@@ -18,7 +18,7 @@ Arbeiten mit Markdown, einer Dokumenten-Sprache
 Zeichen: # Steht für eine Überschrift mit der größten Schriftgröße in Fettschrift
 	 ## wie oben nur kleiner, sinnvoll nur bis ###
 	 `text` Hervorheben von Text, grauer Kasten mit Schrift in Monospace
-	-- Runde Aufzählungszeichen
+	~~-~~ Runde Aufzählungszeichen
 	**text** nur Fettschrift der aktuellen Schrift hier in text
 
 Speichern der Readme lokal
