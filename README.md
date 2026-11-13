@@ -1,59 +1,152 @@
-# MyApp
+# Workshop Abläufe 12.11.2026
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.14.
+# Tools
+- Git, GitHub, VSCode
 
-## Development server
 
-To start a local development server, run:
+# Inhaltverzeichnis
+- [1. Einrichten Readme auf HTML-Projekt](#Wdh Git-Workflow)
+- [2. Klonen einer Remote-Ressource von GitHub über den Link zur GitHub Ressource](#Externen Quelltext holen)
+- [3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung](#3-Quelltext sichern und ausführen)
 
-```bash
-ng serve
-```
+# 1. Einrichten Readme auf HTML-Projekt
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+VSCode: Menü -> Datei -> Neue Datei -> Dateiname eingeben: Readme.md
+VSCode erkennt automatisch die .md Markdown-Datei
 
-## Code scaffolding
+Arbeiten mit Markdown, einer Dokumenten-Sprache
+Zeichen: # Steht für eine Überschrift mit der größten Schriftgröße in Fettschrift
+	 ## wie oben nur kleiner, sinnvoll nur bis ###
+	 `text` Hervorheben von Text, grauer Kasten mit Schrift in Monospace
+	-- Runde Aufzählungszeichen
+	**text** nur Fettschrift der aktuellen Schrift hier in text
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Speichern der Readme lokal
+Strg K S für den gesamten Projektordner
+Strg S für die geöffnete Datei
+Strg Shift S unter einem bestimmten Pfad, Dateinamen abspeichern
 
-```bash
-ng generate component component-name
-```
+## Wegschreiben der Readme an das zuvor angelegt Github-Repository
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- `git status` 
+zeigt die Änderungen in ihren Projektordner an (alle noch Unstaged)
 
-```bash
-ng generate --help
-```
+- `git add Readme.md`
+wenn sie sich im Projektordner befinden und nur die Readme erstellt habe (Info über git Status)
 
-## Building
+- `git add .`
+wenn alle Dateien im Projektordner als Snapshot vorgemerkt (Staged) werden sollen
 
-To build the project run:
+- `git commit -m " Readme erstellt, Arbeitabläufe in Git, GitHub und VSCode"`
+lokaler Schnapsschuss für das lokale Repository
 
-```bash
-ng build
-```
+Übertragung des lokalen Repositorys auf das Github-Repository
+- git push
+Vorraussetzung ist ein komplett konfigurierter Projektordner
+bzw. lokales Repository (Readme.md bzw txt-Datei im Modulordner nachschauen für die Grundkonfiguration)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+# 2.Klonen einer Remote-Ressource von GitHub über den Link zur GitHub Ressource
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Neuen Projektordner erstellen
+VSCode -> Menü -> Datei > Ordner öffnen (z.B Dokumente)
+Menü in VSCode -> Terminal -> Neues Terminal
 
-```bash
-ng test
-```
+Prompt im Terminal steht sofort auf Dokumente 
 
-## Running end-to-end tests
+- Eingabe im Terminal
+`mkdir Ordnername`
+Neuen Ordner erstellen der später der Projektordner ist.
 
-For end-to-end (e2e) testing, run:
+- Eingabe im Terminal
+`cd Ordnername`
+im Prompt zum Ordnername wechseln
 
-```bash
-ng e2e
-```
+Neue Ressource von GitHub holen, Link wird Ihnen zugeschickt, oder ist im System abrufbar oder die eigene 
+GitHub Ressource kopieren
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- `git clone https://github.com/username/reponame.git`
 
-## Additional Resources
+Der Quelltext aus der GitHub Ressource z.B eine Angular-Anwendung steht jetzt in ihrem lokalen Projektordner zu
+Verfügung
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# 3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung
+
+Machen Sie den neuen Quellcode für sich verfügbar und sichern Sie diesen Quelltext in einem eigenen GitHub-Repository
+In Ihrem Projektordner steht die Ressource noch auf der Quelle bzw. dem GitHub-Repo von dem sie geklont haben.
+Stellen Sie auf Ihre eigene Ressource um:
+
+## 3.1 Neues GitHub Repository erstellen
+
+Unter ihrem GitHub-Account: Home-Ansicht: Navigationsleiste und Pluszeichen "+" Neues Repository (New repository) oder
+Menü -> All repositories -> grüner Button "New repository"
+
+Einstellung Private oder Public berücksichtigen.
+
+Zum neuen Repository gehen: Anklicken und https Ressource kopieren
+Bei frischem Repo ohne Quelltext sehen Sie direkt den Link, sofort kopieren: siehe Dokument-Symbol
+
+Wenn schon Code drin steht gehen sie über den grünen Code Button "<> Code"
+-
+## 3.2 Die eigene neuen GitHub-Ressource in den Projektordner schreiben
+
+VSCode im Terminal, Prompt zeigt auf den Projektordner
+
+- `git remote set-url origin https://github.com/ihrGithubAccountName/NeuesRepoName.git`
+  
+Verbindung prüfen, hier sollte ihre GitHub-Repository Ressource zu sehen sein.
+
+- `git remote -v`
+
+Dann der Dreiklang git add, git commit, git push
+Da sie wahrscheinlich noch keine Änderungen vorgenommen haben ist git add nicht notwendig
+
+- `git commit -m "Original Code der Angular-Anwendung"
+
+Da sie zum ersten Mal hier pushen, den Push-Befehl komplett angeben.
+
+- git push -u origin main
+
+origin bezieht sich immer auf die Github-Ressource, die im Projektordner angelegt wurde.
+Dann sollten sie den Quellcode in der Cloud (ihrem Repository auf Github) übertragen haben.
+
+
+## 3.3 Installationen für um die Anwendung zum Laufen zu bringen (hier die Angular-Anwendung)
+
+VSCode Terminal:
+
+Installation von Node.js LTS als Middleware mit den benötigten Laufzeitumgebungen (Engine) und Bibliotheken
+
+- `winget install OpenJS.NodeJS.LTS`
+
+Kontrollieren der Installation, Version von Node.js prüfen
+
+- `node -v`
+
+Version des NodeJS Paketmanagers
+
+- `npm -v`
+
+Hier sollten Ihnen die aktuellen Versionnummern angezeigt werden
+
+Bei Problemen: Oftmals verweigert Windows Ihnen Skripte im Betriebssystem zu schreiben
+Mit dem folgenden Befehl holen sich sich die Berechtigung:
+
+- `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`
+
+Jetzt sollte auch die Prüfung der Versionen funktionieren.
+
+## 3.4 Die Angular-Bibliotheken erstellen (node_modules)
+
+VSCode Terminal in Ihrem Prjektordner
+
+- `npm install`
+
+Es werden einige Warnmeldungen erzeugt, die harmlos sind. Sie sollten keine Error-Meldungen haben
+
+## 3.5 Die Anwendung starten mit dem Build, Zusammenbau aller Funktionalitäten
+
+- `npm start`
+
+Angluar Anwendungen laufen standardmäßig auf dem Port 4200
+Wenn Sie jetzt localhost:4200 in Ihrem Browser eingeben, sehen Sie die Anwendung
