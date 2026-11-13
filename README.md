@@ -5,11 +5,11 @@
 
 
 # Inhaltverzeichnis
-- [1. Einrichten Readme auf HTML-Projekt](#1-einrichten-readme-auf-html-projekt)
-- [2. Klonen einer Remote Ressource von GitHub über den Link zur GitHub Ressource](#2-klonen-einer-remote-ressource-von-github-über-den-link-zur-github-ressource)
-- [3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung](#3-einrichten-der-anwendung-über-den-geklonten-quelltext-und-ausführen-der-anwendung)
+- [1. Einrichten Readme auf HTML-Projekt](#kapitel1)
+- [2. Klonen einer Remote Ressource von GitHub über den Link zur GitHub Ressource](#kapitel2)
+- [3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung](#kapitel3)
 
-# 1. Einrichten Readme auf HTML-Projekt
+# <a id="kapitel1"></a>1. Einrichten Readme auf HTML-Projekt
 
 VSCode: Menü -> Datei -> Neue Datei -> Dateiname eingeben: Readme.md
 VSCode erkennt automatisch die .md Markdown-Datei
@@ -53,7 +53,7 @@ Vorraussetzung ist ein komplett konfigurierter Projektordner
 bzw. lokales Repository (Readme.md bzw txt-Datei im Modulordner nachschauen für die Grundkonfiguration)
 
 
-# 2.Klonen einer Remote Ressource von GitHub über den Link zur GitHub Ressource
+# <a id="kapitel2"></a>2.Klonen einer Remote Ressource von GitHub über den Link zur GitHub Ressource
 
 - Neuen Projektordner erstellen
 VSCode -> Menü -> Datei > Ordner öffnen (z.B Dokumente)
@@ -75,9 +75,9 @@ GitHub Ressource kopieren
 - `git clone https://github.com/username/reponame.git`
 
 Der Quelltext aus der GitHub Ressource z.B eine Angular-Anwendung steht jetzt in ihrem lokalen Projektordner zu
-Verfügung
+Verfügung.
 
-# 3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung
+# <a id="kapitel3"></a>3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung
 
 Machen Sie den neuen Quellcode für sich verfügbar und sichern Sie diesen Quelltext in einem eigenen GitHub-Repository
 In Ihrem Projektordner steht die Ressource noch auf der Quelle bzw. dem GitHub-Repo von dem sie geklont haben.
@@ -90,7 +90,7 @@ Menü -> All repositories -> grüner Button "New repository"
 
 Einstellung Private oder Public berücksichtigen.
 
-Zum neuen Repository gehen: Anklicken und https Ressource kopieren
+Zum neuen Repository gehen: Anklicken und https Ressource kopieren.
 Bei frischem Repo ohne Quelltext sehen Sie direkt den Link, sofort kopieren: siehe Dokument-Symbol
 
 Wenn schon Code drin steht gehen sie über den grünen Code Button "<> Code"
@@ -106,7 +106,7 @@ Verbindung prüfen, hier sollte ihre GitHub-Repository Ressource zu sehen sein.
 - `git remote -v`
 
 Dann der Dreiklang git add, git commit, git push
-Da sie wahrscheinlich noch keine Änderungen vorgenommen haben ist git add nicht notwendig
+Da sie wahrscheinlich noch keine Änderungen vorgenommen haben, ist git add nicht notwendig
 
 - `git commit -m "Original Code der Angular-Anwendung`
 
