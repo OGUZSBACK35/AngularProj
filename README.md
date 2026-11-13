@@ -15,18 +15,24 @@ VSCode: Menü -> Datei -> Neue Datei -> Dateiname eingeben: Readme.md
 VSCode erkennt automatisch die .md Markdown-Datei
 
 Arbeiten mit Markdown, einer Dokumenten-Sprache
-Zeichen: # Steht für eine Überschrift mit der größten Schriftgröße in Fettschrift
-	 ## wie oben nur kleiner, sinnvoll nur bis ###
-	 `text` Hervorheben von Text, grauer Kasten mit Schrift in Monospace
-	~~-~~ Runde Aufzählungszeichen
-	**text** nur Fettschrift der aktuellen Schrift hier in text
+Zeichen:
+``` 
+# Steht für eine Überschrift mit der größten Schriftgröße in Fettschrift
+
+## wie oben nur kleiner, sinnvoll nur bis ###
+	
+`text` Hervorheben von Text, grauer Kasten mit Schrift in Monospace
+
+- Runde Aufzählungszeichen
+**text** nur Fettschrift der aktuellen Schrift hier in text
+```
 
 Speichern der Readme lokal
 Strg K S für den gesamten Projektordner
 Strg S für die geöffnete Datei
 Strg Shift S unter einem bestimmten Pfad, Dateinamen abspeichern
 
-## Wegschreiben der Readme an das zuvor angelegt Github-Repository
+## Wegschreiben der Readme an das zuvor angelegte Github-Repository
 
 - `git status` 
 zeigt die Änderungen in ihren Projektordner an (alle noch Unstaged)
@@ -41,7 +47,8 @@ wenn alle Dateien im Projektordner als Snapshot vorgemerkt (Staged) werden solle
 lokaler Schnapsschuss für das lokale Repository
 
 Übertragung des lokalen Repositorys auf das Github-Repository
-- git push
+- `git push`
+
 Vorraussetzung ist ein komplett konfigurierter Projektordner
 bzw. lokales Repository (Readme.md bzw txt-Datei im Modulordner nachschauen für die Grundkonfiguration)
 
@@ -88,7 +95,7 @@ Bei frischem Repo ohne Quelltext sehen Sie direkt den Link, sofort kopieren: sie
 
 Wenn schon Code drin steht gehen sie über den grünen Code Button "<> Code"
 -
-## 3.2 Die eigene neuen GitHub-Ressource in den Projektordner schreiben
+## 3.2 Die eigene neue GitHub-Ressource in den Projektordner schreiben
 
 VSCode im Terminal, Prompt zeigt auf den Projektordner
 
@@ -101,21 +108,21 @@ Verbindung prüfen, hier sollte ihre GitHub-Repository Ressource zu sehen sein.
 Dann der Dreiklang git add, git commit, git push
 Da sie wahrscheinlich noch keine Änderungen vorgenommen haben ist git add nicht notwendig
 
-- `git commit -m "Original Code der Angular-Anwendung"
+- `git commit -m "Original Code der Angular-Anwendung`
 
 Da sie zum ersten Mal hier pushen, den Push-Befehl komplett angeben.
 
-- git push -u origin main
+- `git push -u origin main`
 
 origin bezieht sich immer auf die Github-Ressource, die im Projektordner angelegt wurde.
 Dann sollten sie den Quellcode in der Cloud (ihrem Repository auf Github) übertragen haben.
 
 
-## 3.3 Installationen für um die Anwendung zum Laufen zu bringen (hier die Angular-Anwendung)
+## 3.3 Installationen, um die Anwendung zum Laufen zu bringen (hier die Angular-Anwendung)
 
 VSCode Terminal:
 
-Installation von Node.js LTS als Middleware mit den benötigten Laufzeitumgebungen (Engine) und Bibliotheken
+Installation von Node.js LTS (Long-Term Support, stabiler als die anderen Versionen) als Middleware mit den benötigten Laufzeitumgebungen (Engine) und Bibliotheken
 
 - `winget install OpenJS.NodeJS.LTS`
 
