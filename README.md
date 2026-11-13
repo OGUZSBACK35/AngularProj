@@ -5,9 +5,9 @@
 
 
 # Inhaltverzeichnis
-- [1. Einrichten Readme auf HTML-Projekt](#1einrichten-readme-auf-html-projekt)
-- [2. Klonen einer Remote-Ressource von GitHub über den Link zur GitHub Ressource](#2klonen-einer-remote-ressource-von-github-über-den-link-zur-github-ressource)
-- [3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung](#3einrichten-der-anwendung-über-den-geklonten-quelltext-und-ausführen-der-Anwendung)
+- [1. Einrichten Readme auf HTML-Projekt](#1-einrichten-readme-auf-html-projekt)
+- [2. Klonen einer Remote-Ressource von GitHub über den Link zur GitHub Ressource](#2-klonen-einer-remote-ressource-von-github-über-den-link-zur-github-ressource)
+- [3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung](#3-einrichten-der-anwendung-über-den-geklonten-quelltext-und-ausführen-der-anwendung)
 
 # 1. Einrichten Readme auf HTML-Projekt
 
