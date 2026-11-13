@@ -5,9 +5,9 @@
 
 
 # Inhaltverzeichnis
-- [1. Einrichten Readme auf HTML-Projekt](#Wdh Git-Workflow)
-- [2. Klonen einer Remote-Ressource von GitHub über den Link zur GitHub Ressource](#Externen Quelltext holen)
-- [3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung](#3-Quelltext sichern und ausführen)
+- [1. Einrichten Readme auf HTML-Projekt](# 1. Einrichten Readme auf HTML-Projekt)
+- [2. Klonen einer Remote-Ressource von GitHub über den Link zur GitHub Ressource](# 2.Klonen einer Remote-Ressource von GitHub über den Link zur GitHub Ressource)
+- [3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung](# 3. Einrichten der Anwendung über den geklonten Quelltext und Ausführen der Anwendung)
 
 # 1. Einrichten Readme auf HTML-Projekt
 
