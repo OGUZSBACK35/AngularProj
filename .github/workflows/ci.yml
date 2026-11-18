@@ -1,0 +1,34 @@
+name: Angular Webshop CI
+
+# on definiert den Trigger (Auslöser) - hier bei jedem push oder pull_request auf die Branches main oder dev
+on:
+    push:
+        branches: [main, dev]
+    pull_request:
+        branches: [main]
+
+# jobs ist eine Sammlung von Aufgaben, die parallel oder nacheinander ablaufen können. Hier nur der Build-Prozess
+jobs:
+    build:
+        # Bestimmt das Betriebssystem des virtuellen Servers (Runner)
+        runs-on: ubuntu-latest
+        
+        # Die einzelnen Befehle oder vorgefertigten Bausteine (Actions), die nacheinander abgearbeitet werden
+        steps:
+            # 1. Schritt den Quellcode vom GitHub-Repository auf den Runner laden (Folie 10)
+            - name: Repository auschecken
+              uses: action/checkout@v4
+
+            # 2. Schritt: Node.js Umgebung auf dem Linux-Server einrichten
+            - name: Node.js einrichten
+              uses: actions/setup-node@v4
+              with:
+                node-version: '20.x' # die ursprünglich genutzte Node.js Version wird dem Runner mitgeteilt
+
+            # 3. Schritt: Abhängigkeiten installieren (wie lokal mit npm install)
+            - name: Dependencies installieren
+              run: npm install
+
+            # 4. Schritt: Projekt-Build testen (prüft, ob der Code fehlerfrei übersetzt wird)
+            - name: Angular Build ausführen
+              run: npm run build -- --configuration production
